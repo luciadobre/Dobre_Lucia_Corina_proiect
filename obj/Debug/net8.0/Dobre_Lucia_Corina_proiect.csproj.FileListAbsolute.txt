@@ -28,3 +28,4 @@ C:\Users\lcdob\Documents\GitHub\Dobre_Lucia_Corina_proiect\obj\Debug\net8.0\refi
 C:\Users\lcdob\Documents\GitHub\Dobre_Lucia_Corina_proiect\obj\Debug\net8.0\Dobre_Lucia_Corina_proiect.pdb
 C:\Users\lcdob\Documents\GitHub\Dobre_Lucia_Corina_proiect\obj\Debug\net8.0\Dobre_Lucia_Corina_proiect.genruntimeconfig.cache
 C:\Users\lcdob\Documents\GitHub\Dobre_Lucia_Corina_proiect\obj\Debug\net8.0\ref\Dobre_Lucia_Corina_proiect.dll
+C:\Users\lcdob\Documents\GitHub\Dobre_Lucia_Corina_proiect\obj\Debug\net8.0\Dobre_Lucia_Corina_proiect.sourcelink.json
