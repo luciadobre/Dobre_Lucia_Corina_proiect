@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Dobre_Lucia_Corina_proiect.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<Dobre_Lucia_Corina_proiectContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Dobre_Lucia_Corina_proiectContext") ?? throw new InvalidOperationException("Connection string 'Dobre_Lucia_Corina_proiectContext' not found.")));
 
 var app = builder.Build();
 
