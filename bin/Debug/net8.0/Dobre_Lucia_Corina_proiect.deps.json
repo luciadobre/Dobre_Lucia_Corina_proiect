@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Dobre_Lucia_Corina_proiect/1.0.0": {
+        "runtime": {
+          "Dobre_Lucia_Corina_proiect.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dobre_Lucia_Corina_proiect/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
