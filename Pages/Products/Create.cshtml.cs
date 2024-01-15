@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Dobre_Lucia_Corina_proiect.Data;
 using Dobre_Lucia_Corina_proiect.Models;
-using System.Security.Policy;
 
 namespace Dobre_Lucia_Corina_proiect.Pages.Products
 {
@@ -22,19 +21,51 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Products
 
         public IActionResult OnGet()
         {
-            ViewData["DistributorID"] = new SelectList(_context.Set<Distributor>(), "ID",
-"DistributorName");
+            PopulateDistributorProductData();
             return Page();
+        }
+
+        private void PopulateDistributorProductData()
+        {
+            var distributorProductOptions = _context.DistributorProduct
+                .Select(dp => new
+                {
+                    ID = dp.ID,
+                    Description = $"{dp.DistributorProductName} (Available: {dp.Quantity})"
+                })
+                .ToList();
+
+            ViewData["DistributorProductID"] = new SelectList(distributorProductOptions, "ID", "Description");
+            ViewData["DistributorID"] = new SelectList(_context.Distributor, "ID", "DistributorName");
         }
 
         [BindProperty]
         public Product Product { get; set; } = default!;
 
-        // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
+            var distributorProduct = _context.DistributorProduct
+                .FirstOrDefault(dp => dp.ID == Product.DistributorProductID);
+
+            if (distributorProduct == null)
+            {
+                ModelState.AddModelError("Product.DistributorProductID", "Invalid distributor product.");
+                PopulateDistributorProductData();
+                return Page();
+            }
+
+            if (Product.Quantity > distributorProduct.Quantity)
+            {
+                ModelState.AddModelError("Product.Quantity", "Quantity exceeds available stock.");
+                PopulateDistributorProductData();
+                return Page();
+            }
+
+            distributorProduct.Quantity -= Product.Quantity;
+
             if (!ModelState.IsValid)
             {
+                PopulateDistributorProductData();
                 return Page();
             }
 

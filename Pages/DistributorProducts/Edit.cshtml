@@ -1,0 +1,55 @@
+﻿@page
+@model Dobre_Lucia_Corina_proiect.Pages.DistributorProducts.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>DistributorProduct</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DistributorProduct.ID" />
+            <div class="form-group">
+                <label asp-for="DistributorProduct.DistributorProductName" class="control-label"></label>
+                <input asp-for="DistributorProduct.DistributorProductName" class="form-control" />
+                <span asp-validation-for="DistributorProduct.DistributorProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DistributorProduct.Type" class="control-label"></label>
+                <input asp-for="DistributorProduct.Type" class="form-control" />
+                <span asp-validation-for="DistributorProduct.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DistributorProduct.Quantity" class="control-label"></label>
+                <input asp-for="DistributorProduct.Quantity" class="form-control" />
+                <span asp-validation-for="DistributorProduct.Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DistributorProduct.BuyPrice" class="control-label"></label>
+                <input asp-for="DistributorProduct.BuyPrice" class="form-control" />
+                <span asp-validation-for="DistributorProduct.BuyPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DistributorProduct.DistributorID" class="control-label"></label>
+                <select asp-for="DistributorProduct.DistributorID" class="form-control" asp-items="ViewBag.DistributorID"></select>
+                <span asp-validation-for="DistributorProduct.DistributorID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

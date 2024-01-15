@@ -24,8 +24,8 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Products
         public async Task OnGetAsync()
         {
             Product = await _context.Product
-                .Include(b => b.Distributor)
-                .ToListAsync();
+                .Include(p => p.Distributor)
+                .Include(p => p.DistributorProduct).ToListAsync();
         }
     }
 }

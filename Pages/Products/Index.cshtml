@@ -14,13 +14,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Product[0].Name)
+                @Html.DisplayNameFor(model => model.Product[0].DistributorProduct)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Product[0].Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Product[0].Distributor)
+                @Html.DisplayNameFor(model => model.Product[0].Quantity)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Product[0].BuyPrice)
@@ -35,7 +35,7 @@
                 @Html.DisplayNameFor(model => model.Product[0].SellDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Product[0].Distributor.DistributorName)
+                @Html.DisplayNameFor(model => model.Product[0].Distributor)
             </th>
             <th></th>
         </tr>
@@ -43,14 +43,14 @@
     <tbody>
 @foreach (var item in Model.Product) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DistributorProduct.ID)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Distributor)
+                @Html.DisplayFor(modelItem => item.Quantity)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.BuyPrice)
@@ -65,7 +65,7 @@
                 @Html.DisplayFor(modelItem => item.SellDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Distributor.DistributorName)
+                @Html.DisplayFor(modelItem => item.Distributor.ID)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

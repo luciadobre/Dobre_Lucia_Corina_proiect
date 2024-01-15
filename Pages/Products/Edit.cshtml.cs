@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Dobre_Lucia_Corina_proiect.Data;
 using Dobre_Lucia_Corina_proiect.Models;
-using System.Security.Policy;
 
 namespace Dobre_Lucia_Corina_proiect.Pages.Products
 {
@@ -37,8 +36,8 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Products
                 return NotFound();
             }
             Product = product;
-            ViewData["DistributorID"] = new SelectList(_context.Set<Distributor>(), "ID",
-"DistributorName");
+           ViewData["DistributorID"] = new SelectList(_context.Distributor, "ID", "ID");
+           ViewData["DistributorProductID"] = new SelectList(_context.DistributorProduct, "ID", "ID");
             return Page();
         }
 

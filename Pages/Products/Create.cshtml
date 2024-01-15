@@ -14,9 +14,12 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Product.Name" class="control-label"></label>
-                <input asp-for="Product.Name" class="form-control" />
-                <span asp-validation-for="Product.Name" class="text-danger"></span>
+                <label asp-for="Product.DistributorProductID" class="control-label">Product Name</label>
+                <select asp-for="Product.DistributorProductID" class="form-control" asp-items="ViewBag.DistributorProductID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.DistributorID" class="control-label">Distributor</label>
+                <select asp-for="Product.DistributorID" class="form-control" asp-items="ViewBag.DistributorID"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Product.Description" class="control-label"></label>
@@ -24,9 +27,9 @@
                 <span asp-validation-for="Product.Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Product.Distributor" class="control-label"></label>
-                <input asp-for="Product.Distributor" class="form-control" />
-                <span asp-validation-for="Product.Distributor" class="text-danger"></span>
+                <label asp-for="Product.Quantity" class="control-label"></label>
+                <input asp-for="Product.Quantity" class="form-control" />
+                <span asp-validation-for="Product.Quantity" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Product.BuyPrice" class="control-label"></label>
@@ -39,22 +42,14 @@
                 <span asp-validation-for="Product.SellPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Product.SellDate" class="control-label"></label>
-                <input asp-for="Product.SellDate" class="form-control" />
-                <span asp-validation-for="Product.SellDate" class="text-
-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Product.BuyDate" class="control-label"></label>
                 <input asp-for="Product.BuyDate" class="form-control" />
-                <span asp-validation-for="Product.BuyDate" class="text-
-danger"></span>
+                <span asp-validation-for="Product.BuyDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Product.DistributorID" class="control-label">Publisher Name</label>
-                <select asp-for="Product.DistributorID" class="form-control" asp-items="ViewBag.PublisherID">
-                </select>
-                <span asp-validation-for="Product.DistributorID" class="text-danger"></span>
+                <label asp-for="Product.SellDate" class="control-label"></label>
+                <input asp-for="Product.SellDate" class="form-control" />
+                <span asp-validation-for="Product.SellDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

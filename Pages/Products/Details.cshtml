@@ -12,10 +12,10 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Product.Name)
+            @Html.DisplayNameFor(model => model.Product.DistributorProductName)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Product.Name)
+            @Html.DisplayFor(model => model.Product.DistributorProductName)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Product.Description)
@@ -24,10 +24,10 @@
             @Html.DisplayFor(model => model.Product.Description)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Product.Distributor)
+            @Html.DisplayNameFor(model => model.Product.Quantity)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Product.Distributor)
+            @Html.DisplayFor(model => model.Product.Quantity)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Product.BuyPrice)
@@ -52,6 +52,18 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Product.SellDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.Distributor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Distributor.ID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.DistributorProduct)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.DistributorProduct.ID)
         </dd>
     </dl>
 </div>

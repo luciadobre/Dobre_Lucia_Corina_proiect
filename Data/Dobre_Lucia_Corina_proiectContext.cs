@@ -16,5 +16,9 @@ namespace Dobre_Lucia_Corina_proiect.Data
 
         public DbSet<Dobre_Lucia_Corina_proiect.Models.Product> Product { get; set; } = default!;
         public DbSet<Dobre_Lucia_Corina_proiect.Models.Distributor> Distributor { get; set; } = default!;
+        public DbSet<Dobre_Lucia_Corina_proiect.Models.DistributorProduct> DistributorProduct { get; set; } = default!;
+        public DbSet<Dobre_Lucia_Corina_proiect.Models.Sale> Sale { get; set; } = default!;
+        public DbSet<Dobre_Lucia_Corina_proiect.Models.Buyer> Buyer { get; set; } = default!;
+
     }
 }
