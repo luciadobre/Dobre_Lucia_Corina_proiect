@@ -50,7 +50,8 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Sales
                 return Page();
             }
 
-            var product = _context.Product.FirstOrDefault(p => p.ID == Sale.ProductID);
+            var product = await _context.Product
+                .FirstOrDefaultAsync(p => p.ID == Sale.ProductID);
 
             if (product == null)
             {
@@ -65,6 +66,7 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Sales
                 PopulateProductData();
                 return Page();
             }
+            Sale.Profit = Sale.Quantity * (product.SellPrice - product.BuyPrice);
 
             product.Quantity -= Sale.Quantity;
 
@@ -73,5 +75,6 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Sales
 
             return RedirectToPage("./Index");
         }
+
     }
 }

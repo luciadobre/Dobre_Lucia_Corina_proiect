@@ -22,14 +22,6 @@ namespace Dobre_Lucia_Corina_proiect.Models
 
         [Display(Name = "Profit")]
         [DataType(DataType.Currency)]
-        public decimal Profit { get; private set; }
-
-        public void CalculateProfit()
-        {
-            if (Product != null)
-            {
-                Profit = Quantity * (Product.SellPrice - Product.BuyPrice);
-            }
-        }
+        public decimal Profit { get; set; }
     }
 }

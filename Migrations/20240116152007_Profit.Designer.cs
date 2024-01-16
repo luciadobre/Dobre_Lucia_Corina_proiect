@@ -4,6 +4,7 @@ using Dobre_Lucia_Corina_proiect.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Dobre_Lucia_Corina_proiect.Migrations
 {
     [DbContext(typeof(Dobre_Lucia_Corina_proiectContext))]
-    partial class Dobre_Lucia_Corina_proiectContextModelSnapshot : ModelSnapshot
+    [Migration("20240116152007_Profit")]
+    partial class Profit
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

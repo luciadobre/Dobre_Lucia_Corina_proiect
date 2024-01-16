@@ -1,0 +1,26 @@
+﻿@page
+@model ProfitSummaryModel
+
+<h2>Profit Summary</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Sold</th>
+            <th>Quantity</th>
+            <th>Profit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sale in Model.Sales)
+        {
+            <tr>
+                <td>@sale.Product?.DistributorProduct?.DistributorProductName</td>
+                <td>@sale.Quantity</td>
+                <td>@sale.Profit.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Total Profit: @Model.TotalProfit.ToString("C")</h3>
