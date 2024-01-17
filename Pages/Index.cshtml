@@ -1,10 +1,68 @@
 ﻿@page
-@model IndexModel
+@model Dobre_Lucia_Corina_proiect.Pages.SalesProductsModel
+
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Sales and Products";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h2>Sales and Products</h2>
+
+<div class="button-group" style="margin-bottom: 20px;">
+    <a class="btn btn-secondary" href="/Buyers/Index">Buyers</a>
+    <a class="btn btn-secondary" href="/Distributors/Index">Distributors</a>
 </div>
+
+
+<h3>Products</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Buy Price</th>
+            <th>Sell Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products)
+        {
+            <tr>
+                <td>@product.DistributorProduct?.DistributorProductName</td>
+                <td>@product.Description</td>
+                <td>@product.Quantity</td>
+                <td>@product.BuyPrice.ToString("C")</td>
+                <td>@product.SellPrice.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sale Date</th>
+            <th>Product Name</th>
+            <th>Quantity Sold</th>
+            <th>Sell Price</th>
+            <th>Buy Price</th>
+            <th>Profit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sale in Model.Sales)
+        {
+            <tr>
+                <td>@sale.SaleDate.ToShortDateString()</td>
+                <td>@sale.Product?.DistributorProduct?.DistributorProductName</td>
+                <td>@sale.Quantity</td>
+                <td>@sale.Product?.SellPrice.ToString("C")</td>
+                <td>@sale.Product?.BuyPrice.ToString("C")</td>
+                <td>@sale.Profit.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="~/ProfitSummary">View Profit Summary</a>
+<a class="btn btn-primary" href="/Sales/Index">Make a sale</a>

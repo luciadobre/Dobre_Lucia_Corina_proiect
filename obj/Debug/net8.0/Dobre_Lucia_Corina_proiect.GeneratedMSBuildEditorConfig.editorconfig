@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dobre_Lucia_Corina_proiect
 build_property.RootNamespace = Dobre_Lucia_Corina_proiect
@@ -18,6 +26,66 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\lcdob\Documents\GitHub\Dobre_Lucia_Corina_proiect
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Buyers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Buyers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Buyers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Buyers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Buyers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/DistributorProducts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JQcm9kdWN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/DistributorProducts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JQcm9kdWN0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/DistributorProducts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JQcm9kdWN0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/DistributorProducts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JQcm9kdWN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/DistributorProducts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JQcm9kdWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Distributors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Distributors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Distributors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Distributors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Distributors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,8 +94,64 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Products/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/ProfitSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZml0U3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Sales/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Sales/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Sales/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Sales/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Sales/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Sales/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Shared/_ValidationScriptsPartial.cshtml]
