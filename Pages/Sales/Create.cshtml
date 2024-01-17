@@ -24,12 +24,12 @@
                 <span asp-validation-for="Sale.SaleDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Sale.ProductID" class="control-label"></label>
-                <select asp-for="Sale.ProductID" class ="form-control" asp-items="ViewBag.ProductID"></select>
+                <label asp-for="Sale.ProductID" class="control-label">Product</label>
+                <select asp-for="Sale.ProductID" class="form-control" asp-items="ViewBag.ProductID"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Sale.BuyerID" class="control-label"></label>
-                <select asp-for="Sale.BuyerID" class ="form-control" asp-items="ViewBag.BuyerID"></select>
+                <label asp-for="Sale.BuyerID" class="control-label">Buyer</label>
+                <select asp-for="Sale.BuyerID" class="form-control" asp-items="ViewBag.BuyerID"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

@@ -44,20 +44,16 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Sales
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var sale = await _context.Sale.FindAsync(id);
-            if (sale != null)
-            {
-                Sale = sale;
-                _context.Sale.Remove(Sale);
-                await _context.SaveChangesAsync();
-            }
+            Sale = await _context.Sale
+                .Include(s => s.Product)
+                .Include(s => s.Buyer)
+                .FirstOrDefaultAsync(m => m.ID == id);
 
-            return RedirectToPage("./Index");
+            if (Sale == null) return NotFound();
+
+            return RedirectToPage("./ConfirmDelete", new { id = id });
         }
     }
 }

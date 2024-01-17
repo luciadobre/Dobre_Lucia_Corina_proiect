@@ -102,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Products/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -124,6 +128,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/ProfitSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZml0U3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Sales/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcQ29uZmlybURlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Sales/Create.cshtml]
