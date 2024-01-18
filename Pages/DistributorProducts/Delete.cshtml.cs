@@ -29,7 +29,7 @@ namespace Dobre_Lucia_Corina_proiect.Pages.DistributorProducts
                 return NotFound();
             }
 
-            var distributorproduct = await _context.DistributorProduct.FirstOrDefaultAsync(m => m.ID == id);
+            var distributorproduct = await _context.DistributorProduct.Include(dp => dp.Distributor).FirstOrDefaultAsync(m => m.ID == id);
 
             if (distributorproduct == null)
             {
@@ -52,9 +52,7 @@ namespace Dobre_Lucia_Corina_proiect.Pages.DistributorProducts
             var distributorproduct = await _context.DistributorProduct.FindAsync(id);
             if (distributorproduct != null)
             {
-                DistributorProduct = distributorproduct;
-                _context.DistributorProduct.Remove(DistributorProduct);
-                await _context.SaveChangesAsync();
+                return RedirectToPage("./ConfirmDelete", new { id = DistributorProduct.ID });
             }
 
             return RedirectToPage("./Index");

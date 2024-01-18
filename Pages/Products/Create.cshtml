@@ -33,8 +33,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Product.BuyPrice" class="control-label"></label>
-                <input asp-for="Product.BuyPrice" class="form-control" />
-                <span asp-validation-for="Product.BuyPrice" class="text-danger"></span>
+                <select asp-for="Product.BuyPrice" class="form-control" asp-items="ViewBag.BuyPriceOptions" id="buyPriceDropdown"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Product.SellPrice" class="control-label"></label>
@@ -63,5 +62,21 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var buyPriceMapping = @Html.Raw(ViewData["BuyPriceMapping"]);
+            var distributorProductDropdown = document.getElementById('distributorProductDropdown');
+            var buyPriceInput = document.getElementById('buyPriceInput');
+
+            distributorProductDropdown.addEventListener('change', function () {
+                var selectedId = this.value;
+                var buyPrice = buyPriceMapping[selectedId];
+                buyPriceInput.value = buyPrice ? buyPrice : '';
+            });
+        });
+    </script>
 }

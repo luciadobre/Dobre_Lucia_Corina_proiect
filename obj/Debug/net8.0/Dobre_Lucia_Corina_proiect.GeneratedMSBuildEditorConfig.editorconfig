@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\lcdob\Documents\GitHub\Dobre_Lucia_Corina_proiect
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Buyers/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJzXENvbmZpcm1EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Buyers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/DistributorProducts/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JQcm9kdWN0c1xDb25maXJtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/DistributorProducts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JQcm9kdWN0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,6 +72,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/DistributorProducts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JQcm9kdWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Distributors/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzdHJpYnV0b3JzXENvbmZpcm1EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lcdob/Documents/GitHub/Dobre_Lucia_Corina_proiect/Pages/Distributors/Create.cshtml]

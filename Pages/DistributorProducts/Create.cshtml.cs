@@ -21,7 +21,7 @@ namespace Dobre_Lucia_Corina_proiect.Pages.DistributorProducts
 
         public IActionResult OnGet()
         {
-        ViewData["DistributorID"] = new SelectList(_context.Distributor, "ID", "ID");
+            ViewData["DistributorID"] = new SelectList(_context.Distributor, "ID", "DistributorName");
             return Page();
         }
 
@@ -29,6 +29,8 @@ namespace Dobre_Lucia_Corina_proiect.Pages.DistributorProducts
         public DistributorProduct DistributorProduct { get; set; } = default!;
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
+
+        public SelectList DistributorNames { get; set; }
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

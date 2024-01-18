@@ -22,6 +22,7 @@ namespace Dobre_Lucia_Corina_proiect.Pages.DistributorProducts
 
         [BindProperty]
         public DistributorProduct DistributorProduct { get; set; } = default!;
+        public SelectList DistributorNames { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -36,7 +37,7 @@ namespace Dobre_Lucia_Corina_proiect.Pages.DistributorProducts
                 return NotFound();
             }
             DistributorProduct = distributorproduct;
-           ViewData["DistributorID"] = new SelectList(_context.Distributor, "ID", "ID");
+           ViewData["DistributorID"] = new SelectList(_context.Distributor, "ID", "DistributorName");
             return Page();
         }
 

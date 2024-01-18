@@ -7,51 +7,35 @@
 
 <h1>Distributor Products</h1>
 <p>
-    <a asp-page="~/Create" class="btn btn-primary">Create New Distributor Product</a>
+    <a asp-page="Create" class="btn btn-primary">Create New Distributor Product</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-                @Html.DisplayNameFor(model => model.DistributorProduct[0].DistributorProductName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DistributorProduct[0].Type)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DistributorProduct[0].Quantity)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DistributorProduct[0].BuyPrice)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DistributorProduct[0].Distributor)
-            </th>
-            <th></th>
+            <th>@Html.DisplayNameFor(model => model.DistributorProduct[0].DistributorProductName)</th>
+            <th>@Html.DisplayNameFor(model => model.DistributorProduct[0].Type)</th>
+            <th>@Html.DisplayNameFor(model => model.DistributorProduct[0].Quantity)</th>
+            <th>@Html.DisplayNameFor(model => model.DistributorProduct[0].BuyPrice)</th>
+            <th>@Html.DisplayNameFor(model => model.DistributorProduct[0].Distributor)</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.DistributorProduct) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DistributorProductName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Type)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BuyPrice)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Distributor.ID)
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.DistributorProduct)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.DistributorProductName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Type)</td>
+                <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
+                <td>@Html.DisplayFor(modelItem => item.BuyPrice)</td>
+                <td>@Html.DisplayFor(modelItem => item.Distributor.DistributorName)</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ID" class="btn btn-secondary">Edit</a>
+                    <a asp-page="./Details" asp-route-id="@item.ID" class="btn btn-info">Details</a>
+                    <a asp-page="./Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+
     </tbody>
 </table>
-
-<a asp-page="~/Edit" class="btn btn-secondary">Edit</a> 
-<a asp-page="~/Details" class="btn btn-secondary">Details</a>
-<a asp-page="~/Delete" class="btn btn-secondary">Delete</a>

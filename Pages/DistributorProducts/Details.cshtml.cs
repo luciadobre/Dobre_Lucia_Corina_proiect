@@ -28,16 +28,17 @@ namespace Dobre_Lucia_Corina_proiect.Pages.DistributorProducts
                 return NotFound();
             }
 
-            var distributorproduct = await _context.DistributorProduct.FirstOrDefaultAsync(m => m.ID == id);
-            if (distributorproduct == null)
+            DistributorProduct = await _context.DistributorProduct
+                .Include(dp => dp.Distributor)
+                .FirstOrDefaultAsync(m => m.ID == id);
+
+            if (DistributorProduct == null)
             {
                 return NotFound();
             }
-            else
-            {
-                DistributorProduct = distributorproduct;
-            }
+
             return Page();
         }
+
     }
 }

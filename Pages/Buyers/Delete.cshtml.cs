@@ -50,11 +50,9 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Buyers
             }
 
             var buyer = await _context.Buyer.FindAsync(id);
-            if (buyer != null)
+            if (Buyer != null)
             {
-                Buyer = buyer;
-                _context.Buyer.Remove(Buyer);
-                await _context.SaveChangesAsync();
+                return RedirectToPage("./ConfirmDelete", new { id = Buyer.ID });
             }
 
             return RedirectToPage("./Index");

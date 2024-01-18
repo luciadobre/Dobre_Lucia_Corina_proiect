@@ -31,13 +31,23 @@ namespace Dobre_Lucia_Corina_proiect.Pages.Products
                 .Select(dp => new
                 {
                     ID = dp.ID,
-                    Description = $"{dp.DistributorProductName} (Available: {dp.Quantity})"
+                    Description = $"{dp.DistributorProductName} (Available: {dp.Quantity})",
+                    BuyPrice = dp.BuyPrice
                 })
                 .ToList();
 
             ViewData["DistributorProductID"] = new SelectList(distributorProductOptions, "ID", "Description");
+
+            var buyPriceOptions = distributorProductOptions
+                .GroupBy(dp => dp.BuyPrice)
+                .Select(g => new { BuyPrice = g.Key, Description = g.Key.ToString() })
+                .ToList();
+
+            ViewData["BuyPriceOptions"] = new SelectList(buyPriceOptions, "BuyPrice", "Description");
             ViewData["DistributorID"] = new SelectList(_context.Distributor, "ID", "DistributorName");
         }
+
+
 
         [BindProperty]
         public Product Product { get; set; } = default!;
