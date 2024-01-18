@@ -22,9 +22,11 @@ public class ProfitSummaryModel : PageModel
     {
         Sales = await _context.Sale
             .Include(s => s.Product)
+                .ThenInclude(p => p.DistributorProduct)
             .ToListAsync();
 
         TotalProfit = Sales.Sum(s => s.Profit);
     }
+
 
 }

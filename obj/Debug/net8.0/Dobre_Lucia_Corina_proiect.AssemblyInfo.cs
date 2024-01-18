@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dobre_Lucia_Corina_proiect")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf232eda9967b1f6b9e75993d6617a0b972a66bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eec4c6dc59c5b47c955ed07d34121a37fcdaa781")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dobre_Lucia_Corina_proiect")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dobre_Lucia_Corina_proiect")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
